@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300,400..700;1,400..700&display=swap');
+
+@font-face {
+  font-family: "tobia";
+  src: url('./font/Tobias-Light.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #C88E57;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  height: 10vh;
+  padding: 5vh;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffff;
+  font-family: "PT Sans", sans-serif;
+  font-size:  0.8052708638360175vw;
+  font-weight: 400;
+}
+
+.part-1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.top-con {
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  perspective: 600px;
+  perspective-origin: top;
+}
+
+.top-content{
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+.top-content p{
+  /* transform: rotateX(50deg); */
+  font-size:   0.8052708638360175vw;
+  font-weight: 400;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  color: #fff;
+  font-family: "Lora", serif;
+  
+}
+
+.top-con h1 {
+  line-height: 8.185724743777453vw;
+  font-family: "tobia";
+  font-size: 7.833089311859443vw;
+  color: #ffff;
+  font-weight: 300;
+}
+
+
+.btm-content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btm-content h1 {
+
+  color: #fff;
+  font-family: "tobia";
+  font-size: 7.833089311859443vw;
+  font-weight: 300;
+}
+
+.btm-content p {
+  width: 50vw;
+  color: #fff;
+  font-size: 0.8vw;
+  text-align: center;
+  font-size:   0.8052708638360175vw;
+  font-weight: 400;
+}
+
+.bottom-con {
+  position: absolute;
+  bottom: 15%;
+  perspective: 600px;
+  perspective-origin: bottom;
+}
+
+
+.img {
+  height: 50%;
+  width: 65vw;
+  background-size: cover;
+  background-position: center;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.img video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.part-2 {
+  width: 100%;
+  height: 100vh;
+  background: lightblue;
+}
+
+@media (max-width:600px) {
+
+  nav{
+    height: 2vh;
+    border: 2px solid black;
+    margin-bottom: 0;
+    display: none;
+  }
+  /* a{
+    display: none;
+  } */
+
+  .top-con{
+    top: 12%;
+  }
+  .top-content p{
+    margin-top: 0;
+    font-size: 5vw;
+    margin-bottom: 7%;
+  }
+  .top-content h1{
+    font-size: 10.833089311859443vw;
+    line-height: 11.185724743777453vw;
+  }
+  .btm-content h1 {
+    font-size: 10.833089311859443vw;
+    line-height: 11.185724743777453vw;
+  }
+  .bottom-con{
+    bottom: 9%;
+  }
+  .btm-content p{
+    width: 80vw;
+    font-size: 2vw;
+  }
+}
